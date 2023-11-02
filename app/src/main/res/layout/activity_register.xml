@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".register">
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      android:gravity="center"
+      android:background="@color/black"
+      >
+       <LinearLayout
+           android:layout_width="450px"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:padding="5dp"
+           >
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Register"
+               android:layout_marginBottom="20dp"
+               android:textColor="@color/blue"
+               android:textAlignment="center"
+
+               />
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Enter name"
+               android:textColor="@color/white"
+
+               />
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="40dp"
+               android:background="@color/white"
+               android:textColor="@color/black"
+               android:id="@+id/editTextName"
+               android:hint="mike G"
+               />
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Enter Email"
+               android:textColor="@color/white"
+
+               />
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="40dp"
+               android:background="@color/white"
+               android:textColor="@color/black"
+               android:id="@+id/editTextEmail"
+               android:hint="mikeg@gmail.com"
+               android:inputType="textEmailAddress"
+               />
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Enter Password"
+               android:textColor="@color/white"
+
+               />
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="40dp"
+               android:background="@color/white"
+               android:textColor="@color/black"
+               android:inputType="textPassword"
+               android:id="@+id/editTextPassword"
+               android:hint="12345678"
+               />
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:orientation="vertical"
+               >
+               <Button
+                   android:layout_width="120dp"
+                   android:layout_height="40dp"
+                   android:text="Register"
+                   android:layout_margin="5dp"
+                   android:id="@+id/registerBtn"
+                    android:backgroundTint="@color/blue"
+
+                   />
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Have account? "
+                   android:textAlignment="center"
+                   android:id="@+id/backToLogin"
+                   android:textColor="@color/blue"
+                   />
+           </LinearLayout>
+
+       </LinearLayout>
+
+
+
+  </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
